@@ -1,0 +1,140 @@
+/* RESET */
+img {
+  max-width: 100%;
+  display: block;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+}
+body,
+h1,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+/* CSS DESKTOP */
+.mobile {
+  display: none;
+}
+.bg-card {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.card {
+  max-width: 1080px;
+  min-height: 446px;
+  background-color: hsl(244, 38%, 16%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
+}
+.conteudo {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.conteudo h1 {
+  grid-column: 1 / -1;
+  font-size: 35px;
+  font-weight: 700;
+}
+.conteudo h1 strong {
+  color: hsl(277, 64%, 61%);
+}
+.conteudo p {
+  grid-column: 1 / -1;
+  line-height: 1.6;
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+.conteudo .services {
+  align-self: flex-end;
+}
+.conteudo .services p {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  font-size: 25px;
+  font-weight: bold;
+}
+.conteudo .services span {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 2px;
+}
+picture {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+picture img {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+picture::before {
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* CSS RESPONSIVE */
+@media (max-width: 1110px) {
+  .card {
+    margin: 20px;
+  }
+}
+@media (max-width: 970px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .bg-card {
+    margin: 50px 0;
+  }
+  .card {
+    max-width: 654px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  picture {
+    grid-row: 1 / -1;
+  }
+  picture img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+  }
+  picture::before {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
