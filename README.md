@@ -34,8 +34,8 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ### Links
 
-- Solution URL: [https://github.com/neirander/order-summary-card](https://github.com/neirander/order-summary-card)
-- Live Site URL: [https://neirander.github.io/order-summary-card](https://neirander.github.io/order-summary-card/)
+- Solution URL: [https://github.com/neirander/stats-preview-card-component](https://github.com/neirander/stats-preview-card-component)
+- Live Site URL: [https://neirander.github.io/stats-preview-card-component](https://neirander.github.io/stats-preview-card-component)
 
 ## My process
 
